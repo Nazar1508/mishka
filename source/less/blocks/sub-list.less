@@ -1,0 +1,28 @@
+.sub-list {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .sub-list {
+    position: absolute;
+    top: 110px;
+    display: flex;
+    justify-content: space-between;
+    width: 336px;
+    .list-reset();
+  }
+
+  .sub-list__link {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: #8d8d8d;
+    }
+
+    &:active {
+      color: #cacaca;
+    }
+  }
+}

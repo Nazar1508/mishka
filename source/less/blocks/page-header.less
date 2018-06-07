@@ -1,0 +1,24 @@
+.page-header__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    top: 20px;
+    left: 6.5%;
+    transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 1050px;
+  }
+}
