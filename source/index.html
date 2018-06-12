@@ -13,8 +13,8 @@
 </head>
 <body>
 <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+  <include src="build/img/sprite.svg"></include>
+</div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
@@ -40,14 +40,14 @@
           <li class="site-list__item">
             <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
-          <ul class="sub-list">
-            <li class="sub-list__item">
-              <a class="sub-list__link" href="#">Новые поступления</a>
-            </li>
-            <li class="sub-list__item">
-              <a class="sub-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
+        </ul>
+        <ul class="sub-list">
+          <li class="sub-list__item">
+            <a class="sub-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="sub-list__item">
+            <a class="sub-list__link" href="#">Распродажа</a>
+          </li>
         </ul>
         <div class="main-nav__user-info user-info">
           <div class="user-info__search">
@@ -74,6 +74,31 @@
       </nav>
     </div>
   </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Мишка</h1>
+    <section class="product">
+      <span class="product__delivery">Бесплатная доставка по России</span>
+      <h2 class="product__title">Милые штуки ручной работы&nbsp;для дома</h2>
+      <ul class="product__list">
+        <li class="product__item">
+          <a class="product__link" href="#">
+            <span>Предметы интерьера</span>
+            <svg class="product__icon product__icon--interior" width="40" height="62">
+              <use xlink:href="#icon-interior"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="product__item product__item--other">
+          <a class="product__link" href="#">
+          <span>Детские игрушки</span>
+          <svg class="product__icon product__icon--toy" width="60" height="60">
+            <use xlink:href="#icon-toy"></use>
+          </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
   <script src="js/menu-script.js"></script>
 </body>
 </html>

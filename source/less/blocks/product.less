@@ -1,0 +1,116 @@
+.product {
+  min-height: 489px;
+  text-align: center;
+  background-color: #fafafa;
+  background-image: url("../img/bg-product-mobile@x1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 373px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-product-mobile@x2.jpg");
+  }
+}
+
+.product__title {
+  width: 245px;
+  margin: 0 auto;
+  padding-top: 79px;
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+}
+
+.product__list {
+  .list-reset();
+  margin-top: 130px;
+}
+
+.product__item {
+  position: relative;
+  box-sizing: border-box;
+  background-color: @green;
+}
+
+.product__item--other {
+  background-color: #56c3b2;
+}
+
+.product__link {
+  display: block;
+  padding: 33px 9%;
+  font-weight: bold;
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.product__link:hover {
+  padding-top: 38px;
+}
+
+
+.product__link span {
+  display: block;
+  width: 105px;
+}
+
+.product__icon {
+  position: absolute;
+
+  &--interior {
+    top: 23px;
+    right: 11%;
+    fill: #3bb09d;
+  }
+
+  &--toy {
+    top: 21px;
+    right: 8%;
+    fill: #35a999;
+  }
+}
+
+.product__delivery {
+  display: none;
+}
+
+.product__link:hover .product__icon--interior {
+  top: 28px;
+  fill: #29a592;
+}
+
+.product__link:active .product__icon--interior {
+  fill: #44c0aa;
+}
+
+.product__link:hover .product__icon--toy {
+  top: 26px;
+  fill: #239f8e;
+}
+
+.product__link:active .product__icon--toy {
+  fill: #37b2a0;
+}
+
+.product__link:active span {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    min-height: 746px;
+    background-image: url("../img/bg-product-tablet@x1.jpg");
+    background-size: 100% 746px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-product-tablet@x2.jpg");
+    }
+  }
+
+  .product__delivery {
+    display: block;
+    width: 231px;
+    margin-left: auto;
+    margin-right: 7%;
+  }
+}
