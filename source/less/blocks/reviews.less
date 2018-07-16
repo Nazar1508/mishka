@@ -1,0 +1,108 @@
+.reviews {
+  position: relative;
+  margin-top: 55px;
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    width: 100%;
+    background-image: url(../img/icon/zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+  }
+}
+
+.reviews__wrapper {
+  width: 81%;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.reviews__switches {
+  margin: 0;
+  margin-top: 32px;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-top: 24px;
+  line-height: 30px;
+}
+
+.reviews__user-name {
+  margin-top: 28px;
+}
+
+.reviews__user-email {
+  display: block;
+  margin-top: 5px;
+}
+
+.reviews__button {
+  margin-top: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    position: relative;
+    width: auto;
+    padding-top: 80px;
+    padding-right: 6.66%;
+    padding-bottom: 136px;
+    padding-left: 6.66%;
+    background-image: url("../img/bg-review-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-review-tablet@2x.jpg");
+    }
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__switches  {
+    position: absolute;
+    right: 6.66%;
+    bottom: 140px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 47px;
+    right: 6.66%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    background: none;
+  }
+
+  .reviews__wrapper {
+    width: 1050px;
+    padding: 80px 0 190px 175px;
+    box-sizing: border-box;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__switches {
+    bottom: 180px;
+  }
+}

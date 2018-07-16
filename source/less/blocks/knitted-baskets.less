@@ -1,0 +1,194 @@
+.knitted-baskets {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 37px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    width: 100%;
+    background-image: url("../img/icon/zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+  }
+}
+
+.knitted-baskets__wrapper {
+  position: relative;
+  width: 81%;
+  margin: 0 auto;
+}
+
+.knitted-baskets__heading {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.knitted-baskets__title {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: @green;
+  text-transform: uppercase;
+}
+
+.knitted-baskets__promo {
+  margin: 0;
+  margin-top: 23px;
+}
+
+.knitted-baskets__description {
+  width: 100%;
+  margin-top: 19px;
+}
+
+.knitted-baskets__description tr {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -4px;
+  padding: 5px 27px 9px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.knitted-baskets__description tr:not(:first-child) {
+  padding-top: 8px;
+  padding-right: 120px;
+}
+
+
+.knitted-baskets__description-text {
+  line-height: 20px;
+
+  &--left {
+    width: 38%;
+  }
+}
+
+.knitted-baskets__buy {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  margin: 0;
+}
+
+.knitted-baskets__price {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+}
+
+.knitted-baskets__button {
+  margin-top: 25px;
+}
+
+.knitted-baskets__item {
+  margin: 0;
+  margin-top: 26px;
+  padding-bottom: 125px;
+}
+
+@media (min-width: @tablet-width) {
+  .knitted-baskets__wrapper {
+    width: 88.925%;
+  }
+
+  .knitted-baskets__captions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .knitted-baskets__heading {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .knitted-baskets__title {
+    margin-top: 5px;
+    margin-right: 1%;
+    width: 15%;
+    text-align: center;
+  }
+
+  .knitted-baskets__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .knitted-baskets__text-container,
+  .knitted-baskets__item {
+    width: 50%;
+  }
+
+  .knitted-baskets__text-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 434px;
+  }
+
+  .knitted-baskets__promo {
+    width: 87%;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .knitted-baskets__description {
+    width: 87%;
+  }
+
+  .knitted-baskets__buy {
+    position: static;
+    width: 87%;
+    margin-top: auto;
+  }
+
+  .knitted-baskets__item {
+    width: 333px;
+    height: 404px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .knitted-baskets__wrapper {
+    width: 1050px;
+  }
+
+  .knitted-baskets__captions {
+    position: absolute;
+    top: 134px;
+    justify-content: flex-start;
+  }
+
+  .knitted-baskets__heading {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .knitted-baskets__title {
+    width: 72px;
+    margin-left: 47px;
+    margin-right: 58px;
+  }
+
+  .knitted-baskets__text-container {
+    width: 330px;
+    margin-left: 175px;
+    padding-top: 210px;
+  }
+
+  .knitted-baskets__item {
+    width: 525px;
+    height: 636px;
+    margin-top: 70px;
+  }
+}

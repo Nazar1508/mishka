@@ -1,0 +1,128 @@
+.about-us {
+  padding-top: 27px;
+}
+
+.about-us__wrapper {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-us__list {
+  .list-reset();
+  margin-top: 33px;
+  margin-left: 2px;
+}
+
+.about-us__item {
+  margin-bottom: 30px;
+  padding-top: 53px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
+
+.about-us__item--ecology {
+  background-image: url("../img/icon/ecology-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 9px 0;
+}
+
+.about-us__item--style {
+  background-image: url("../img/icon/style-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 0;
+  background-size: 47px 27px;
+}
+
+.about-us__item--like {
+  background-image: url("../img/icon/like-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  background-size: 34px 27px;
+}
+
+.about-us__item--handmade {
+  background-image: url("../img/icon/handmade-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 2px;
+  background-size: 35px 34px;
+}
+
+.about-us__item--support {
+  letter-spacing: 0.2px;
+  background-image: url("../img/icon/support-icon.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 3px;
+  background-size: 55px 23px;
+}
+
+.about-us__item--wrapping {
+  background-image: url("../img/icon/wrapping-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 1px;
+  background-size: 32px 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__wrapper {
+    width: 88.925%;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 300px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item--ecology {
+    order: 1;
+  }
+
+  .about-us__item--style {
+    order: 3;
+  }
+
+  .about-us__item--like {
+    order: 5;
+  }
+
+  .about-us__item--handmade {
+    order: 2;
+  }
+
+  .about-us__item--support {
+    order: 4;
+  }
+
+  .about-us__item--wrapping {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__wrapper {
+    width: 1050px;
+    padding: 0 175px;
+    box-sizing: border-box;
+  }
+}

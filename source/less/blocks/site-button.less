@@ -1,0 +1,35 @@
+.site-button {
+  .button-reset();
+  display: block;
+  width: 100%;
+  padding: 15px 5%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #444444;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #858585;
+  }
+}
+
+.site-button--write {
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-button--write {
+    width: 176px;
+    padding: 12px 15px;
+  }
+}
